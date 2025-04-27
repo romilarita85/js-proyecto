@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo JSON con Fetch</title>
+</head>
+<body>
+  <h1>Trayendo JSON externo</h1>
+
+  <pre id="mostrarJson"></pre>
+
+  <script>
+    // Usamos fetch para cargar el archivo datos.json
+    fetch('10-2-ejemplojson.json')
+      .then(response => response.json()) // Convertimos la respuesta a objeto
+      .then(data => {
+        console.log(data); // Lo vemos en la consola
+        document.getElementById('mostrarJson').textContent = JSON.stringify(data, null, 2); // Mostramos en la página
+      })
+      .catch(error => {
+        console.error('Error al cargar el JSON:', error);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo JSON</title>
+</head>
+<body>
+  <h1>Mostrando ejemplo de JSON en HTML</h1>
+  
+  <pre id="mostrarJson"></pre> <!-- Etiqueta para mostrar texto formateado -->
+
+  <script>
+    // Creamos un objeto en formato JSON/(SIN FETCH)
+    const persona = {
+      nombre: "Maria",
+      edad: 23,
+      ciudad: "Buenos Aires"
+    };
+
+    // Convertimos el objeto a texto (formato JSON)
+    const personaEnTexto = JSON.stringify(persona, null, 2); // El 2 es para que quede "lindo" el formato
+
+    // Mostramos el JSON en el HTML
+    document.getElementById('mostrarJson').textContent = personaEnTexto;
+  </script>
+</body>
+</html>

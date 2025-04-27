@@ -1,0 +1,10 @@
+{
+    "nombre": "Marge",
+    "edad": 30,
+    "activo": true,
+    "dirección": {
+        "calle": "Av. Siempre Viva",
+        "ciudad": "Springfield"
+    }
+}
+
