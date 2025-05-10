@@ -1,3 +1,4 @@
+//Bitwise:
 //bit: un digito en binario, puede tomar el valor de 0 o 1
 //Byte: es la combinacion de 8 bits. En un byte se pueden almacenar
 //caracteres,numeros, simbolos o valores numericos.

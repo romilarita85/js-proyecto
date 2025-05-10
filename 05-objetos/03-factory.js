@@ -1,6 +1,9 @@
-//Factory fuction: nos permiten poder crear objetos de una forma sencilla y no repetitiva
+//Factory fuction: 
+//nos permiten poder crear objetos de una forma sencilla y no repetitiva
+
 //objeto de usuario:
 //creamos multiples usuarios con una estructura similar
+
 // let user = 
 // {
 //     id: 1,
@@ -12,7 +15,9 @@
 //         console.log('Recuperando clave...');
 //     },
 // };
-//-Si queremos crear otros usuarios-Usamos factory function (por lo general empiezn con crear o create)
+
+//-Si queremos crear otros usuarios-Usamos factory function 
+// (por lo general empiezan con crear o create)
 //por convencion en camelCase
 function crearUsuario(name,email)
 {

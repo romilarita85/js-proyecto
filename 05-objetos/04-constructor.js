@@ -16,9 +16,13 @@ function Usuario(params)
 //*Si queremos crer un objeto de usuario usamos palabra 
 //reservada new -> 
 //1-se crea un objeto literal del aire {}
+
 //2-se vincula el prototipo de la funcion de Usuario con el objeto q se acaba de crear
+
 //3-a this se le asigna {} (objeto vacio q se creo) -> this = {}
+
 //4-si la funcion de usuario no retorna nada ->retorna automaticamente  this 
+
 let usuario = new Usuario();
 console.log(usuario);
 

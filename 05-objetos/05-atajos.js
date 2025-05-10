@@ -24,10 +24,11 @@ const s2 = new String("1 + 1")// String como objeto
 
 // console.log(s1, s2);
 // console.log(eval(s1), eval(s2));
-//*USAMOS VALUEOF POR SI QUEREMOS SABER LOS VALORES PRIMITIVOS DEL STRING COMO OBJETO
+
+//*USAMOS VALUEOF POR SI QUEREMOS SABER LOS VALORES PRIMITIVOS DEL STRING COMO OBJETO:
 console.log(s2.valueOf());// "1 + 1"
 /**
- * ✅ RECOMENDACIONES:
+ * ✅RECOMENDACIONES:
  * - Siempre conviene usar literales ("", 123, true, etc.).
  * - Solo usar new String(), new Number(), etc., si es estrictamente necesario.
  * - En ese caso, usar .valueOf() para obtener el valor primitivo.

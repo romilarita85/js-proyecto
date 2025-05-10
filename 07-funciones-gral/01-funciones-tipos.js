@@ -44,7 +44,7 @@ function returned(){
 let saludo = returned(); //llamamos a la funcion
 saludo();
 //----------------------------------------------------
-// Funciones Flecha (Arrow Functions)
+//-Funciones Flecha (Arrow Functions)
 const flecha = () => {
     console.log("Soy una función flecha");
 };
@@ -53,11 +53,11 @@ flecha();
 //No tienen arguments
 //Son más concisas
 //--------------------------------------------------------
-//Funciones Anónimas:
+//-Funciones Anónimas:
 setTimeout(function() {
     console.log("Esto es una función anónima");
 }, 1000);
-//Closures (Cierres):
+//-Closures (Cierres):
 function saludar(nombre) {
     return function() {
       console.log("Hola " + nombre);
@@ -67,7 +67,7 @@ function saludar(nombre) {
   const saludoRomi = saludar("Romi");
   saludoRomi();  // 👉 Hola Romi
 
-//Funciones como objetos (con propiedades)
+//-Funciones como objetos (con propiedades)
 function saludo() {}
 saludo.mensaje = "Hola desde una propiedad";
 console.log(saludo.mensaje);  // 👉 Hola desde una propiedad
@@ -81,3 +81,23 @@ console.log(saludo.mensaje);  // 👉 Hola desde una propiedad
 //- Permiten programación funcional gracias a que pueden ser pasadas, retornadas y combinadas.
 
  */
+//usamos const para funciones:
+//Porque:
+//• Generalmente no reasignás funciones una vez que las declarás.
+//• Evitás errores accidentales al tratar de sobrescribir la función por error.
+//• Da un código más claro y seguro.
+
+// Tipos de funciones:
+
+//     1-Declaradas: function nombre() { }
+
+//     2-Anónimas: const func = function() { }
+
+//     3-Flecha (Arrow): const func = (parametros) => { }
+
+//     4-Autoejecutables (IIFE): (() => { })()
+
+//     5-Recursivas: Se llaman a sí mismas.
+
+//     6-Con parámetros por defecto: function nombre(param = valorDefecto) { }
+

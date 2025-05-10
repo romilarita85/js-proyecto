@@ -146,5 +146,21 @@ try {
 } catch (error) {
     alert("Error personalizado: " + error.message);
 }
+//-----------------------------------------------------------
+function procesarUsuario(usuario) {
+    try {
+        if (!usuario.nombre) {
+            throw new Error("El usuario no tiene nombre");
+        }
+
+        console.log("Procesando a:", usuario.nombre.toUpperCase());
+        // otras operaciones...
+
+    } catch (error) {
+        console.error("Error al procesar usuario:", error.message);
+    }
+}
+
+procesarUsuario({ edad: 30 });  // Falla por falta de 'nombre'
 
     

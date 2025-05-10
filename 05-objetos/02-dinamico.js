@@ -1,3 +1,5 @@
+//Objetos dinamicos:
+
 const user = { id: 1, name: 'Nico'};
 /**
  * -Aunque creemos un objeto con const, podemos modificar sus propiedades internas.

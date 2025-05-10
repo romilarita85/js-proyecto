@@ -1,7 +1,21 @@
 // --------------------------------------------------------
 // Funciones Flecha (Arrow Functions)
+//Las funciones flecha son una forma más compacta de escribir 
+// funciones anónimas, y además tienen la particularidad 
+// de no tener su propio contexto de this (que es útil en algunas situaciones). 
+// Usan una sintaxis más corta.
+//------------------------------------------------------------------
 // Más concisas, no tienen su propio this, ni argumentos
 
+const saludarFlecha = () => {
+    console.log("¡Hola desde una función flecha!");
+};
+saludarFlecha();  // Llama a la función
+
+// Función flecha simplificada (una sola línea)
+const saludarFlechaSimplificada = () => console.log("¡Hola desde una función flecha simplificada!");
+saludarFlechaSimplificada();  // Llama a la función
+//------------------------------------------------------
 //-Funcion clasica:
 function sumar(a,b){
     return a + b;
@@ -25,9 +39,7 @@ function saludar(nombre) {
 }
   
   // Función flecha (es igual pero más corta)
-const saludar = (nombre) => {
-    return "Hola " + nombre;
-};
+const saludar = (nombre) => {return "Hola " + nombre;};
   
   // Aún más corta si es una sola línea (retorno implícito)
 const saludar = (nombre) => "Hola " + nombre;
@@ -54,7 +66,7 @@ const resta = (a, b) => {
     return resultado;
 };
 console.log(resta(10, 3)); // 👉 7
-//5. Comportamiento del this en Funciones Flecha
+//5. Comportamiento del this en Funciones Flecha------------------------------------------
 //Las funciones flecha no tienen su propio this. 
 //El valor de this se hereda del contexto donde fue creada la función:
 

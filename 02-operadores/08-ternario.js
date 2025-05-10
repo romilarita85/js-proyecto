@@ -12,3 +12,7 @@ console.log(acceso);
 let nota = 8;
 let resultado = nota >= 9 ? "Excelente" : nota >= 7 ? "Aprobado" : "Desaprobado";
 console.log(resultado); //"Aprobado"
+
+// Condición anidada
+var edad1 = 18;
+var resultado1 = edad > 18 ? "Mayor de edad" : edad < 18 ? "Menor de edad" : "Exactamente 18 años";
